@@ -7,7 +7,7 @@ namespace GithubActionsLab
     public class Math
     {
         [Test]
-        public void Add_Valid()
+        public void Add_ValidDiaz()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
@@ -15,7 +15,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Invalid()
+        public void Add_InvalidDiaz()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
@@ -23,7 +23,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Null()
+        public void Add_NullDiaz()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -31,7 +31,7 @@ namespace GithubActionsLab
         }
         //subtract
         [Test]
-        public void Add_ValidSub()
+        public void Add_ValidSubDiaz()
         {
             Assert.AreEqual(1, Program.Subtract("2", "1"));
             Assert.AreEqual(5, Program.Subtract("7", "2"));
@@ -39,7 +39,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_InvalidSub()
+        public void Add_InvalidSubDiaz()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -47,7 +47,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_NullSub()
+        public void Add_NullSubDiaz()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -55,7 +55,7 @@ namespace GithubActionsLab
         }
         //multiply
         [Test]
-        public void Add_ValidMul()
+        public void Add_ValidMulDiaz()
         {
             Assert.AreEqual(2, Program.Multiply("1", "2"));
             Assert.AreEqual(6, Program.Multiply("3", "2"));
@@ -63,7 +63,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_InvalidMul()
+        public void Add_InvalidMulDiaz()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -71,7 +71,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_NullMul()
+        public void Add_NullMulDiaz()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -79,7 +79,7 @@ namespace GithubActionsLab
         }
         //divide
         [Test]
-        public void Add_ValidDiv()
+        public void Add_ValidDivDiaz()
         {
             Assert.AreEqual(2, Program.Divide("2", "1"));
             Assert.AreEqual(4, Program.Divide("8", "2"));
@@ -87,7 +87,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_InvalidDiv()
+        public void Add_InvalidDivDiaz()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -95,7 +95,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_NullDiv()
+        public void Add_NullDivDiaz()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -103,7 +103,7 @@ namespace GithubActionsLab
         }
         //power
         [Test]
-        public void Add_ValidPow()
+        public void Add_ValidPowDiaz()
         {
             Assert.AreEqual(2, Program.Power("1", "2"));
             Assert.AreEqual(9, Program.Power("3", "2"));
@@ -111,7 +111,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_InvalidPow()
+        public void Add_InvalidPowDiaz()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -119,7 +119,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_NullPow()
+        public void Add_NullPowDiaz()
                  {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
